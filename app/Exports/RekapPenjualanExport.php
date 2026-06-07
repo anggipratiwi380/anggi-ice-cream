@@ -23,7 +23,7 @@ class RekapPenjualanExport implements FromCollection, WithHeadings, WithMapping,
     {
         return OrderDetail::with(['order.customer', 'order.sales', 'order.delivery', 'product'])
             ->whereHas('order', function ($query) {
-                $query->where('status', 'completed')
+                $query->where('status', 'paid')
                     ->whereHas('delivery', function ($q) {
                         $q->where('delivery_status', 'delivered');
                     })

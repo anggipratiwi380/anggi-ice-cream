@@ -415,7 +415,7 @@
                         <path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2Z" />
                         <path d="M16 12H16" />
                     </svg>
-                    Laporan Pengiriman dan Pemasaran
+                    Laporan-Laporan
                 </a>
 
                 <a href="{{ route('direktur.stock-logs.index') }}"
